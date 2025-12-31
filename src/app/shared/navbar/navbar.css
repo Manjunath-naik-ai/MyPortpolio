@@ -1,0 +1,55 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;              
+  background: #0b1120;
+  display: flex;
+  align-items: center;
+ justify-content: center;  
+  padding: 0 20px;           /* reduce left-right spacing */
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 18px;            /* slightly smaller */
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Menu container */
+/* Menu container (on sides of logo) */
+.nav-links-left,
+.nav-links-right {
+  display: flex;
+  gap: 20px;
+  flex: 1;                   /* take up space on sides */
+  justify-content: flex-start; /* left for left links, right for right links */
+}
+
+/* Links */
+.nav-links a {
+  color: #d3d5dd;
+  text-decoration: none;
+  font-size: 14px;            /* smaller font */
+  font-weight: 500;
+  padding: 6px 10px;          /* adjust padding */
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #22c55e;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 5px;                /* even smaller gap on mobile */
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+}

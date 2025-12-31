@@ -1,0 +1,139 @@
+.hero-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 0 80px;
+}
+
+/* Image */
+.hero-image img {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+/* Content */
+.hero-content {
+  max-width: 600px;
+}
+
+.intro-text {
+  color: #93c5fd;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.name {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.role {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 12px 0;
+  color: #e5e7eb;
+}
+
+.accent {
+  color: #22c55e;
+}
+
+.description {
+  margin-top: 16px;
+  color: #cbd5f5;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.social-icons a {
+  color: #e5e7eb;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #22c55e;
+  transform: translateY(-3px);
+}
+
+/* Resume Button */
+.resume-btn {
+  margin-left: 20px;
+  padding: 8px 18px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+
+.resume-btn:hover {
+  background: #ffffff;
+  color: #020617;
+}
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-6px);
+}
+
+.stat-box h3 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+/* Different colors for numbers */
+.stat-box:nth-child(1) h3 { color: #22c55e; }  /* green */
+.stat-box:nth-child(2) h3 { color: #38bdf8; }  /* blue */
+.stat-box:nth-child(3) h3 { color: #facc15; }  /* yellow */
+.stat-box:nth-child(4) h3 { color: #a855f7; }  /* purple */
+
+.stat-box p {
+  font-size: 14px;
+  color: #d1d5db;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+}

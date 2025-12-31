@@ -1,0 +1,45 @@
+.dev-arsenal {
+  background-color: #0b1120;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+.main-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.sub-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+/* Icon rows */
+.tech-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+/* Second row spacing */
+.second-line {
+  margin-top: 10px;
+}
+
+/* Icons */
+.tech-icon {
+  width: 65px;
+  height: 65px;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon:hover {
+  transform: scale(1.2);
+}
