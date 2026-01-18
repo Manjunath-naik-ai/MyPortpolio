@@ -1,59 +1,66 @@
-/* container */
-.experience {
-  padding: 4rem 0;
-  color: #ffffff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
-
-.experience .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-/* headings */
-.intro-label,
-.metrics-label {
-  letter-spacing: 0.12em;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  color: #9ca3af;
-  margin-bottom: 0.6rem;
-}
-
-.overview-title {
-  font-size: 2.8rem;
-  margin: 0 0 1rem;
-}
-
-.overview-text {
-  max-width: 640px;
-  line-height: 1.7;
-  font-size: 0.98rem;
-  color: #e5e7eb;
-}
-
-.stats-title {
-  font-size: 2.2rem;
-  margin: 2.5rem 0 1.5rem;
-}
-
-/* cards layout */
+/* ---- Top Stats Cards ---- */
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
 }
 
 .card {
-  background: rgba(15, 23, 42, 0.9);
-  border-radius: 1rem;
-  padding: 1rem;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+  background: #111827;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+  display: flex;
+  justify-content: center;
 }
 
 .card img {
   width: 100%;
-  display: block;
-  border-radius: 0.75rem;
+  border-radius: 8px;
+}
+
+/* ---- Repo Grid ---- */
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.repo-card {
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  padding: 16px;
+  border-radius: 10px;
+  color: #e5e7eb;
+  transition: 0.3s;
+}
+
+.repo-card:hover {
+  transform: translateY(-4px);
+  border-color: #3b82f6;
+}
+
+.repo-card h3 {
+  margin: 0;
+  color: #60a5fa;
+}
+
+.desc {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #d1d5db;
+}
+
+.meta {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.repo-card a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
 }
